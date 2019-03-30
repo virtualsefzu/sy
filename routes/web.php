@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
+Route::get('/register','StaticPagesController@register')->name('register');
+Route::post('/register','StaticPagesController@create')->name('create');
+Route::post('/','StaticPagesController@login')->name('login');
