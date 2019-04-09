@@ -7,11 +7,27 @@ use App\User;
 use Auth;
 class StaticPagesController extends Controller
 {
+    public function download()
+    {
+
+    $files = './dow/1.zip';
+
+    $name = basename($files);       // basename() 函数返回路径中的文件名部分。
+
+        return response()->download($files, $name ,$headers = ['Content-Type'=>'application/zip;charset=utf-8']);
+    }
     public function register()
     {
         return view('register');
     }
-
+    public function index()
+    {
+        return view('index');
+    }
+      public function charts()
+    {
+        return view('charts');
+    }
       public function create(Request $request)
     {
 
