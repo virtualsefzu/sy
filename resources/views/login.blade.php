@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Login</title>
+  <title>登录界面</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -37,9 +37,9 @@
               <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                    <h1 class="h4 text-gray-900 mb-4">开始实验</h1>
                   </div>
-              @if ($errors->any())
+                                @if ($errors->any())
     <div class="alert alert-danger">
         <ul>
             @foreach ($errors->all() as $error)
@@ -48,37 +48,35 @@
         </ul>
     </div>
 @endif
-                  <form class="user" method="post" action="{{route('login')}}">
+              <form class="user" method="post" action="{{route('login')}}">
                     {{ csrf_field() }}
                     <div class="form-group">
-                      <input type="email" name = 'email' class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                      <input type="email" name = 'email' class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="邮箱">
                     </div>
                     <div class="form-group">
-                      <input type="password"   name = 'password' class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                      <input type="password"  name = 'password' class="form-control form-control-user" id="exampleInputPassword" placeholder="密码">
                     </div>
                     <div class="form-group">
                       <div class="custom-control custom-checkbox small">
                         <input type="checkbox" class="custom-control-input" id="customCheck">
-                        <label class="custom-control-label" for="customCheck">Remember Me</label>
+                        <label class="custom-control-label" for="customCheck">记住我</label>
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-user btn-block" >
-                      Login
-                    </button>
-                    <hr>
-                    <a href="index.html" class="btn btn-google btn-user btn-block">
-                       评审登陆
+                    <a href="index.html" class="btn btn-primary btn-user btn-block">
+                      登录
                     </a>
-                    <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                       教师登陆
+                    <hr>
+                    <a href="{{route('index')}}" class="btn btn-google btn-user btn-block">
+                      <i class="fab fa-google fa-fw"></i> 评审登陆
+                    </a>
+                    <a href="{{route('index')}}" class="btn btn-facebook btn-user btn-block">
+                      <i class="fab fa-facebook-f fa-fw"></i> 教师登陆
                     </a>
                   </form>
                   <hr>
-                  <div class="text-center">
-                    <a class="small" href="forgot-password.html">Forgot Password?</a>
                   </div>
                   <div class="text-center">
-                    <a class="small" href="{{route('register')}}">Create an Account!</a>
+                    <a class="small" href="register.html">没有账号？现在注册!</a>
                   </div>
                 </div>
               </div>
