@@ -135,139 +135,258 @@
           </ul>
 
         </nav>
-
-  <form class="user" method="get" action="{{route('download')}}">
+        <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">文件下载</h6>
+          </div>
+<p><p class="mb-0"> &nbsp&nbsp&nbsp&nbsp计算机硬件配置要求
+  <br/>
+<p class="mb-0"> &nbsp&nbsp&nbsp&nbsp处理器：1GHz 32位或64位处理器
+    <br/>
+<p class="mb-0"> &nbsp&nbsp&nbsp&nbsp内存：1 GB 及以上
+    <br/>
+<p class="mb-0"> &nbsp&nbsp&nbsp&nbsp显卡：支持DirectX 9 128M 以上
+    <br/>
+<p class="mb-0"> &nbsp&nbsp&nbsp&nbsp硬盘空间：16G 以上
+    <br/>
+<p class="mb-0"> &nbsp&nbsp&nbsp&nbsp显示器：要求分辨率在1024*768像素及以上
+</p>
+                <br/>
+  <form class="user" method="get" action="{{route('download')}}" >
                     {{ csrf_field() }}
-                    <button href="{{route('download')}}" name='download' class="btn btn-primary btn-user btn-block">
+                    <button href="{{route('download')}}" name='download'   hspace="50"   style="width: 180px;height: 40px" class="btn btn-primary btn-user btn-block">
                       点击下载实验文件
                     </button>
+                      <br/>
 
 </form>
-        <h4 align="center">数据输入：</h4>
+
+        <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">数据输入</h6>
+          </div>
+        <br/>
+
       <table border="3" align="center">
+        <class="m-0 font-weight-bold text-primary">
         <tr>
-          <td>序号</td>
-          <td>空气流量
-            V（m³/h）FIC101</td>
-          <td>空气进口温度
-            t1(°C)TI101</td>
-          <td>空气出口温度
-            t2(°C)TI103</td>
-          <td>蒸汽温度
-            T(°C)TI102</td>
-          <td>温度变化
-            Δt</td>
+          <td>  &nbsp&nbsp&nbsp&nbsp   <p class="m-0 font-weight-bold text-primary " >  &nbsp&nbsp&nbsp&nbsp 序号 &nbsp&nbsp&nbsp&nbsp  </p> &nbsp&nbsp&nbsp&nbsp  </td>
+          <td>  &nbsp&nbsp&nbsp&nbsp   <p class="m-0 font-weight-bold text-primary " > &nbsp&nbsp&nbsp&nbsp  空气流量
+            V(m³/h)FIC101  &nbsp&nbsp&nbsp&nbsp </p>  &nbsp&nbsp&nbsp&nbsp  </td>
+          <td>  &nbsp&nbsp&nbsp&nbsp   <p class="m-0 font-weight-bold text-primary " > &nbsp&nbsp&nbsp&nbsp  空气进口温度
+            t1(°C)TI101 &nbsp&nbsp&nbsp&nbsp   </p> &nbsp&nbsp&nbsp&nbsp  </td>
+          <td>  &nbsp&nbsp&nbsp&nbsp   <p class="m-0 font-weight-bold text-primary " >  &nbsp&nbsp&nbsp&nbsp 空气出口温度
+            t2(°C)TI103 &nbsp&nbsp&nbsp&nbsp  </p>  &nbsp&nbsp&nbsp&nbsp  </td>
+          <td>  &nbsp&nbsp&nbsp&nbsp   <p class="m-0 font-weight-bold text-primary " > &nbsp&nbsp&nbsp&nbsp  蒸汽温度
+              T(°C)TI102  &nbsp&nbsp&nbsp&nbsp </p> &nbsp&nbsp&nbsp&nbsp  </td>
+
         </tr>
 
       <tr>
-        <td>      1
+        <td>      &nbsp&nbsp&nbsp&nbsp    <p class="m-0 font-weight-bold text-primary " > &nbsp&nbsp&nbsp&nbsp  1  &nbsp&nbsp&nbsp&nbsp   </p>
 </td>
-<td>        <input type="text" style="" />
+<td>        <input type="text" style="width:230px; height:45px;" />
 </td>
-<td>        <input type="text" style="" />
+<td>        <input type="text" style="width:230px; height:45px;" />
 </td>
-<td>        <input type="text" style="" />
+<td>        <input type="text" style="width:230px; height:45px;" />
 </td>
-<td>        <input type="text" style="" />
+<td>         <input type="text" style="width:230px; height:45px;" />
 </td>
-<td>        <input type="text" style="" />
-</td>
+
       </tr>
 
       <tr>
-        <td>       2
+        <td>       &nbsp&nbsp&nbsp&nbsp     <p class="m-0 font-weight-bold text-primary " > &nbsp&nbsp&nbsp&nbsp  2 &nbsp&nbsp&nbsp&nbsp  </p>
 </td>
-<td>        <input type="text" style="" />
+<td>      <input type="text" style="width:230px; height:45px;" />
+<td>      <input type="text" style="width:230px; height:45px;" />
 </td>
-<td>        <input type="text" style="" />
+<td>        <input type="text" style="width:230px; height:45px;" />
 </td>
-<td>        <input type="text" style="" />
+<td>        <input type="text" style="width:230px; height:45px;" />
+      </tr>
+      <tr>
+        <td>       &nbsp&nbsp&nbsp&nbsp     <p class="m-0 font-weight-bold text-primary " > &nbsp&nbsp&nbsp&nbsp  3 &nbsp&nbsp&nbsp&nbsp  </p>
 </td>
-<td>        <input type="text" style="" />
+<td>       <input type="text" style="width:230px; height:45px;" />
 </td>
-<td>        <input type="text" style="" />
+<td>      <input type="text" style="width:230px; height:45px;" />
+</td>
+<td>       <input type="text" style="width:230px; height:45px;" />
+</td>
+<td>       <input type="text" style="width:230px; height:45px;" />
 </td>
       </tr>
       <tr>
-        <td>       3
+        <td>       &nbsp&nbsp&nbsp&nbsp      <p class="m-0 font-weight-bold text-primary " > &nbsp&nbsp&nbsp&nbsp  4   &nbsp&nbsp&nbsp&nbsp  </p>
 </td>
-<td>        <input type="text" style="" />
+<td>      <input type="text" style="width:230px; height:45px;" />
+<td>       <input type="text" style="width:230px; height:45px;" />
 </td>
-<td>        <input type="text" style="" />
+<td>       <input type="text" style="width:230px; height:45px;" />
 </td>
-<td>        <input type="text" style="" />
+<td>       <input type="text" style="width:230px; height:45px;" />
 </td>
-<td>        <input type="text" style="" />
+
+      </tr>
+      <tr>
+        <td>       &nbsp&nbsp&nbsp&nbsp     <p class="m-0 font-weight-bold text-primary " > &nbsp&nbsp&nbsp&nbsp  5  &nbsp&nbsp&nbsp&nbsp   </p>
 </td>
-<td>        <input type="text" style="" />
+<td>        <input type="text" style="width:230px; height:45px;" />
+</td>
+<td>       <input type="text" style="width:230px; height:45px;" />
+</td>
+<td>        <input type="text" style="width:230px; height:45px;" />
+</td>
+<td>        <input type="text" style="width:230px; height:45px;" />
+</td>
+
+      </tr>
+      <tr>
+        <td>      &nbsp&nbsp&nbsp&nbsp      <p class="m-0 font-weight-bold text-primary " > &nbsp&nbsp&nbsp&nbsp  6   &nbsp&nbsp&nbsp&nbsp </p>
+</td>
+<td>       <input type="text" style="width:230px; height:45px;" />
+</td>
+<td>       <input type="text" style="width:230px; height:45px;" />
+</td>
+<td>        <input type="text" style="width:230px; height:45px;" />
+</td>
+<td>       <input type="text" style="width:230px; height:45px;" />
 </td>
       </tr>
       <tr>
-        <td>        4
-</td>
-<td>        <input type="text" style="" />
-</td>
-<td>        <input type="text" style="" />
-</td>
-<td>        <input type="text" style="" />
-</td>
-<td>        <input type="text" style="" />
-</td>
-<td>        <input type="text" style="" />
-</td>
-      </tr>
-      <tr>
-        <td>       5
-</td>
-<td>        <input type="text" style="" />
-</td>
-<td>        <input type="text" style="" />
-</td>
-<td>        <input type="text" style="" />
-</td>
-<td>        <input type="text" style="" />
-</td>
-<td>        <input type="text" style="" />
-</td>
-      </tr>
-      <tr>
-        <td>       6
-</td>
-<td>        <input type="text" style="" />
-</td>
-<td>        <input type="text" style="" />
-</td>
-<td>        <input type="text" style="" />
-</td>
-<td>        <input type="text" style="" />
-</td>
-<td>        <input type="text" style="" />
-</td>
-      </tr>
-      <tr>
-        <td>       7
-</td>
-<td>        <input type="text" style="" />
-</td>
-<td>        <input type="text" style="" />
-</td>
-<td>        <input type="text" style="" />
-</td>
-<td>        <input type="text" style="" />
-</td>
-<td>        <input type="text" style="" />
-</td>
-      </tr>
+  </table>
+    <br/>
+      <br/>
+        <br/>
+        <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">数据处理</h6>
+          </div>
+        <br/>
 
       </table>
-      <form name="input" action="html_form_action.php" method="get"align="center"  >
-<input type="submit"  value="提交">
+      <table border="3" align ="center">
+
+
+      <tr>
+        <td>    &nbsp&nbsp&nbsp&nbsp     <p class="m-0 font-weight-bold text-primary " >  &nbsp&nbsp&nbsp&nbsp E =  &nbsp&nbsp&nbsp&nbsp  </p>
+</td>
+<td>     <input type="text" style="width:230px; height:45px;" />
+</td>
+
+
+
+        <td>      &nbsp&nbsp&nbsp&nbsp    <p class="m-0 font-weight-bold text-primary " > &nbsp&nbsp&nbsp&nbsp  ρ =    &nbsp&nbsp&nbsp&nbsp  </p>
+</td>
+<td>        <input type="text" style="width:230px; height:45px;" />
+
+
+        <td>      &nbsp&nbsp&nbsp&nbsp   <p class="m-0 font-weight-bold text-primary " >  &nbsp&nbsp&nbsp&nbsp  Cp =   &nbsp&nbsp&nbsp&nbsp  </p>
+</td>
+<td>        <input type="text" style="width:230px; height:45px;" />
+</td>
+
+      </tr>
+      <tr>
+        <td>     &nbsp&nbsp&nbsp&nbsp     <p class="m-0 font-weight-bold text-primary " > &nbsp&nbsp&nbsp&nbsp  μ =   &nbsp&nbsp&nbsp&nbsp  </p>
+</td>
+<td>        <input type="text" style="width:230px; height:45px;" />
+
+
+
+        <td>   &nbsp&nbsp&nbsp&nbsp     <p class="m-0 font-weight-bold text-primary " >  &nbsp&nbsp&nbsp&nbsp  λ =   &nbsp&nbsp&nbsp&nbsp  </p>
+</td>
+<td>      <input type="text" style="width:230px; height:45px;" />
+
+    <td>    &nbsp&nbsp&nbsp&nbsp     <p class="m-0 font-weight-bold text-primary " >  &nbsp&nbsp&nbsp&nbsp u =  &nbsp&nbsp&nbsp&nbsp  </p>
+</td>
+<td>      <input type="text" style="width:230px; height:45px;" />
+</td>
+</tr>
+
+<tr>
+  <td>    &nbsp&nbsp&nbsp&nbsp    <p class="m-0 font-weight-bold text-primary " >   &nbsp&nbsp&nbsp&nbsp ms =  &nbsp&nbsp&nbsp&nbsp  </p>
+</td>
+<td>      <input type="text" style="width:230px; height:45px;" />
+</td>
+  <td>    &nbsp&nbsp&nbsp&nbsp    <p class="m-0 font-weight-bold text-primary " >  &nbsp&nbsp&nbsp&nbsp Q =  &nbsp&nbsp&nbsp&nbsp  </p>
+</td>
+<td>       <input type="text" style="width:230px; height:45px;" />
+</td>
+
+  <td>    &nbsp&nbsp&nbsp&nbsp   <p class="m-0 font-weight-bold text-primary " >   &nbsp&nbsp&nbsp&nbsp A =    &nbsp&nbsp&nbsp&nbsp  </p>
+</td>
+<td>        <input type="text" style="width:230px; height:45px;" />
+</td>
+</tr>
+
+<tr>
+  <td>    &nbsp&nbsp&nbsp&nbsp     <p class="m-0 font-weight-bold text-primary " >  &nbsp&nbsp&nbsp&nbsp Δtm = &nbsp&nbsp&nbsp&nbsp  </p>
+</td>
+<td>        <input type="text" style="width:230px; height:45px;" />
+</td>
+
+  <td>    &nbsp&nbsp&nbsp&nbsp    <p class="m-0 font-weight-bold text-primary " >  &nbsp&nbsp&nbsp&nbsp k =  &nbsp&nbsp&nbsp&nbsp  </p>
+</td>
+<td>       <input type="text" style="width:230px; height:45px;" />
+</td>
+
+  <td>    &nbsp&nbsp&nbsp&nbsp  <p class="m-0 font-weight-bold text-primary " >  &nbsp&nbsp&nbsp&nbsp α1 =   &nbsp&nbsp&nbsp&nbsp  </p>
+</td>
+<td>       <input type="text" style="width:230px; height:45px;" />
+</td>
+</tr>
+
+<td>    &nbsp&nbsp&nbsp&nbsp  <p class="m-0 font-weight-bold text-primary " >   &nbsp&nbsp&nbsp&nbsp Pr =   &nbsp&nbsp&nbsp&nbsp  </p>
+</td>
+<td>        <input type="text" style="width:230px; height:45px;" />
+</td>
+
+<td>     &nbsp&nbsp&nbsp&nbsp  <p class="m-0 font-weight-bold text-primary " >  &nbsp&nbsp&nbsp&nbsp Nu =  &nbsp&nbsp&nbsp&nbsp  </p>
+</td>
+<td>     <input type="text" style="width:230px; height:45px;" />
+</td>
+
+        <td>   &nbsp&nbsp&nbsp&nbsp  <p class="m-0 font-weight-bold text-primary " >  &nbsp&nbsp&nbsp&nbsp Re =    &nbsp&nbsp&nbsp&nbsp  </p>
+</td>
+<td>       <input type="text" style="width:230px; height:45px;" />
+</td>
+
+      </tr>
+      <tr>
+
+
+      </table>
+
+
+      <br/>
+      <br/>
+      <div class="modal-footer">
+      <form name="input" action="html_form_action.php" method="get"    >
+<input type="submit" a class="btn btn-primary"value="提交" style="margin-right:600px;">
+
+
+
+
 </form>
 
+</div>
+  <br/>
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">参考数据和公式</h6>
+    </div>
 
+        <div class="card-body">
+        <img  src="img/111.png" width="600" height="600"alt="">
+        <p class="mb-0">  <img  src="img/112.png"width="600" height="400" alt="">
+            <p class="mb-0">  <img  src="img/113.png"width="600" height="360" alt="">
 
-
-      </tr>
+      </p>
+    </div>
+  </div>
 
       </table>
 
@@ -276,33 +395,15 @@
 
 
 
-
-
-              </div>
-            </div>
-          </div>
-
+    <!-- Footer -->
+    <footer class="sticky-footer bg-white">
+      <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+          <span>版权所有 &copy; 福州大学</span>
         </div>
-        <!-- /.container-fluid -->
-
       </div>
-      <!-- End of Main Content -->
-
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>版权所有 &copy; 福州大学</span>
-          </div>
-        </div>
-      </footer>
-      <!-- End of Footer -->
-
-    </div>
-    <!-- End of Content Wrapper -->
-
-  </div>
-  <!-- End of Page Wrapper -->
+    </footer>
+    <!-- End of Footer -->
 
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top rounded" href="#page-top">
@@ -341,10 +442,7 @@
   <!-- Page level plugins -->
   <script src="vendor/chart.js/Chart.min.js"></script>
 
-  <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
-  <script src="js/demo/chart-bar-demo.js"></script>
+
 
 </body>
 
