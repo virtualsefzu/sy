@@ -72,9 +72,9 @@ class StaticPagesController extends Controller
            session()->flash('success', '欢迎回来！');
            return  view('index');
        } else {
-           session()->flash('danger', '很抱歉，您的邮箱和密码不匹配');
-           return  view('index');
-           return redirect()->back()->withInput();
+
+           echo "<script>alert('很抱歉，您的邮箱和密码不匹配')</script>";
+           return view('login');
        }
 
     }
