@@ -41,7 +41,7 @@
               <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-4">开始实验</h1>
+                    <h1 class="h4 text-gray-900 mb-4">基于Unity3D的列管换热器传热实验的虚拟仿真平台</h1>
                   </div>
                                 @if ($errors->any())
     <div class="alert alert-danger">

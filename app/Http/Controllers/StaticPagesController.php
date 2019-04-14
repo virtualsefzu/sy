@@ -10,7 +10,7 @@ class StaticPagesController extends Controller
     public function download()
     {
 
-    $files = './dow/1.zip';
+    $files = './dow/Unity3D.zip';
 
     $name = basename($files);       // basename() 函数返回路径中的文件名部分。
 
